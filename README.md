@@ -1,3 +1,12 @@
+# NOTE:
+
+This fork uses hard coded node versions.
+The node version running inside the container (which invokes the actual function code) is still node 10.
+The node version that runs on lambda (which triggers container invokation) is node 16.
+
+Having the container running on node 10 is due to the fact that the upstream repository providing the container image is not longer maintained.
+There is a fork which also has newer node versions (https://github.com/mLupine/docker-lambda) but we currently lack the time to incoorporate that.
+
 # Serverless Batch
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
 
